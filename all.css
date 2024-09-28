@@ -24,20 +24,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%; /* Ensure container does not exceed 90% */
+    width: 90%; /* Ensure container width fits nicely */
     margin: 0 auto;
 }
 
 .logo img {
-    width: 150px; /* Maintain logo size */
+    width: 150px; /* Maintain a consistent logo size */
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    flex-grow: 1; /* Allow navbar to grow and take space */
-    justify-content: center; /* Center navbar items */
+    flex-grow: 1; /* Allow navbar to grow to take up space */
+    justify-content: center; /* Center the navbar items */
 }
 
 .navbar ul li a {
@@ -62,8 +62,9 @@ header {
 .support-btn {
     background-color: #ff6f61;
     color: white;
-    padding: 10px 20px; /* Adjust padding */
-    font-size: 16px; /* Adjust font size */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -73,4 +74,75 @@ header {
     background-color: #ff3f31;
 }
 
-/* Rest of the CSS remains the same */
+/* Crowdfunding Tiers Section */
+#crowdfunding-tiers {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #343131;
+}
+
+#crowdfunding-tiers h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #FFFBE6;
+}
+
+.tiers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tier-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tier-card h2 {
+    font-size: 24px;
+    color: #2b2b2b;
+    margin-bottom: 10px;
+}
+
+/* Investment Breakdown Section */
+#investment-breakdown {
+    text-align: center;
+    padding: 50px;
+    background-color: #343131;
+}
+
+.breakdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.breakdown-text {
+    max-width: 400px;
+    text-align: left;
+    color: #FFFBE6;
+}
+
+.breakdown-chart canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .contact-map-container {
+        flex-direction: column;
+    }
+
+    .contact-container, .map-container {
+        width: 100%;
+    }
+}
