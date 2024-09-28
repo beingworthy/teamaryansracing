@@ -8,6 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #FFFBE6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header Styling */
@@ -24,20 +25,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%; /* Ensure container width fits nicely */
+    width: 90%;
     margin: 0 auto;
 }
 
 .logo img {
-    width: 150px; /* Maintain a consistent logo size */
+    width: 150px; 
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    flex-grow: 1; /* Allow navbar to grow to take up space */
-    justify-content: center; /* Center the navbar items */
 }
 
 .navbar ul li a {
@@ -53,10 +52,8 @@ header {
     border-radius: 5px;
 }
 
-/* Support Button Styling */
 .support-container {
-    display: flex;
-    justify-content: center; /* Center the button */
+    text-align: right;
 }
 
 .support-btn {
@@ -72,6 +69,11 @@ header {
 
 .support-btn:hover {
     background-color: #ff3f31;
+}
+
+/* Main Content Wrapper */
+main {
+    padding-top: 70px; /* To avoid content being hidden behind the fixed header */
 }
 
 /* Crowdfunding Tiers Section */
