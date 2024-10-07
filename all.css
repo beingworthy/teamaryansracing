@@ -54,6 +54,11 @@ header {
 }
 
 /* Banner Section */
+#banner {
+    width: 100%;
+    overflow: hidden;
+}
+
 .banner-image {
     width: 100%;
     height: auto;
@@ -183,32 +188,10 @@ header {
     min-width: 300px;
 }
 
-/* Default Desktop Mode Styles */
-@media screen and (min-width: 768px) {
-    /* Desktop-specific styles */
-    header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .navbar ul {
-        display: flex;
-        list-style: none;
-    }
-
-    .support-btn {
-        font-size: 18px;
-        padding: 10px 20px;
-    }
-}
-
 /* Mobile Mode Styles */
 @media screen and (max-width: 768px) {
     /* Mobile-specific styles */
     header {
-        width: 100%;
         display: block;
         text-align: center;
     }
@@ -248,13 +231,3 @@ header {
     }
 
     /* Investment Breakdown */
-    .breakdown-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Contact and Map Section */
-    .contact-map-container {
-        flex-direction: column;
-    }
-}
