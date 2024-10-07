@@ -54,12 +54,7 @@ header {
 }
 
 /* Banner Section */
-#banner {
-    margin: 20px 0;
-    background-color: #f0f0f0; /* Temporary background color for debugging */
-}
-
-#banner img {
+.banner-image {
     width: 100%;
     height: auto;
 }
@@ -77,12 +72,9 @@ header {
 }
 
 .about-item {
-    flex: 1 1 300px; /* Flex grow, shrink, and basis */
+    flex: 1;
+    min-width: 300px;
     margin: 10px;
-    padding: 10px;
-    background-color: white; /* Add background for better visibility */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Slight shadow */
 }
 
 .about-item h2 {
@@ -104,22 +96,17 @@ header {
 
 .tiers-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Wrap to next line if needed */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .tier-card {
-    flex: 1 1 200px; /* Flex grow, shrink, and basis */
+    flex: 1;
     margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f0f0f0;
-    transition: transform 0.2s; /* Add transition for hover effect */
-}
-
-.tier-card:hover {
-    transform: scale(1.05); /* Scale up on hover */
 }
 
 .tier-card h2 {
@@ -147,18 +134,20 @@ header {
 
 .breakdown-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .breakdown-text {
-    flex: 1 1 300px; /* Flex grow, shrink, and basis */
+    flex: 1;
+    min-width: 300px;
     margin: 10px;
 }
 
 .breakdown-chart {
-    flex: 1 1 300px; /* Flex grow, shrink, and basis */
+    flex: 1;
+    min-width: 300px;
     margin: 10px;
 }
 
@@ -170,38 +159,79 @@ header {
 
 .contact-map-container {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .contact-container {
-    flex: 1 1 300px; /* Flex grow, shrink, and basis */
-    margin: 10px;
-    padding: 20px;
-    background-color: white; /* Add background for better visibility */
-    border-radius: 8px; /* Rounded corners */
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.contact-container a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
 }
 
 .map-container {
-    flex: 1 1 300px; /* Flex grow, shrink, and basis */
-    margin: 10px;
+    flex: 1;
+    min-width: 300px;
 }
 
-.map-container iframe {
-    width: 100%; /* Make the iframe responsive */
-    height: 250px; /* Fixed height */
+/* Default Desktop Mode Styles */
+@media screen and (min-width: 768px) {
+    /* Desktop-specific styles */
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .support-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column; /* Stack items vertically */
+/* Mobile Mode Styles */
+@media screen and (max-width: 768px) {
+    /* Mobile-specific styles */
+    header {
+        width: 100%;
+        display: block;
+        text-align: center;
     }
 
-    .breakdown-container {
-        flex-direction: column; /* Stack items vertically */
+    .logo img {
+        width: 50%;
+        height: auto;
     }
 
-    .contact-map-container {
-        flex-direction: column; /* Stack items vertically */
+    .navbar ul {
+        display: block;
+    }
+
+    .support-btn {
+        display: block;
+        margin: 20px auto;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    /* Adjusting the banner section for mobile */
+    .banner-image {
+        width: 100%;
+        height: auto;
     }
 }
