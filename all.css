@@ -68,22 +68,30 @@ header {
 #about-sections {
     padding: 20px;
     background-color: #f9f9f9;
+    text-align: center;
 }
 
 .about-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .about-item {
     flex: 1;
     min-width: 300px;
     margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about-item h2 {
     font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .about-item p,
@@ -103,6 +111,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .tier-card {
@@ -112,6 +121,12 @@ header {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.tier-card:hover {
+    background-color: #e0e0e0;
 }
 
 .tier-card h2 {
@@ -142,12 +157,22 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .breakdown-text {
     flex: 1;
     min-width: 300px;
     margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.breakdown-text p {
+    font-size: 16px;
 }
 
 .breakdown-chart {
@@ -235,4 +260,20 @@ header {
         text-align: center;
     }
 
-    .break
+    .breakdown-text,
+    .breakdown-chart {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Contact and Sponsors */
+    .contact-map-container {
+        flex-direction: column;
+    }
+
+    .contact-container,
+    .map-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
