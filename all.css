@@ -155,7 +155,7 @@ header {
 }
 
 /* Media Queries for Mobile */
-@media (max-width: 360px) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         text-align: center;
@@ -215,7 +215,7 @@ header {
 
     /* Adjust map height for mobile */
     .map-container iframe {
-        width: 100%;
+        width: 80%;
         height: 250px;
     }
 }
