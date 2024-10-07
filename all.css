@@ -1,4 +1,4 @@
-/* Global Styles .in */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -67,25 +67,25 @@ header {
 .cta button:hover {
     background-color: #ff4500;
 }
+
 .support-container {
     text-align: center;
     margin-top: 40px;
 }
 
 .support-btn {
-    background-color: #ff6f61; /* Button background color */
-    color: white; /* Button text color */
-    padding: 15px 30px; /* Button padding */
-    font-size: 18px; /* Text size */
-    text-decoration: none; /* Remove underline from link */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .support-btn:hover {
-    background-color: #ff3f31; /* Darker shade on hover */
+    background-color: #ff3f31;
 }
-
 
 /* Crowdfunding Tiers Section */
 #crowdfunding-tiers {
@@ -237,16 +237,6 @@ header {
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-    .contact-map-container {
-        flex-direction: column;
-    }
-
-    .contact-container, .map-container {
-        width: 100%;
-    }
-}
-
 /* About Section */
 #about-sections {
     background-color: #343131;
@@ -290,65 +280,53 @@ header {
     font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        display: block;
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    .logo img {
-        width: 50%;
-        height: auto;
-    }
-
     .navbar ul {
-        display: block;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .support-btn {
-        display: block;
-        margin: 20px auto;
+        padding: 10px 20px;
         font-size: 16px;
-        padding: 8px 16px;
     }
 
-    /* Adjusting the banner section for mobile */
-    #banner {
-        display: block; /* Stack the banner */
-    }
-
-    /* About Section */
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Crowdfunding Tiers */
     .tiers-container {
         flex-direction: column;
         align-items: center;
     }
 
-    /* Investment Breakdown */
+    .tier-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
     .breakdown-container {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
-    .breakdown-text,
-    .breakdown-chart {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    /* Contact and Sponsors */
     .contact-map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container, .map-container {
+        width: 100%;
+    }
+
+    .about-container {
         flex-direction: column;
     }
 
-    .contact-container,
-    .map-container {
+    .about-item {
         width: 100%;
-        margin: 10px 0;
     }
 }
