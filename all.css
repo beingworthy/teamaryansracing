@@ -1,97 +1,303 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1, h2 {
-    color: #4A4A4A;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFBE6;
 }
 
-ul {
+/* Header Styling */
+header {
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+/* CTA Button */
+.cta button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta button:hover {
+    background-color: #ff4500;
+}
+
+.support-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.support-btn {
+    background-color: #ff6f61; /* Button background color */
+    color: white; /* Button text color */
+    padding: 15px 30px; /* Button padding */
+    font-size: 18px; /* Text size */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.support-btn:hover {
+    background-color: #ff3f31; /* Darker shade on hover */
+}
+
+/* Crowdfunding Tiers Section */
+#crowdfunding-tiers {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #343131;
+}
+
+#crowdfunding-tiers h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #FFFBE6;
+}
+
+.tiers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tier-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tier-card h2 {
+    font-size: 24px;
+    color: #2b2b2b;
+    margin-bottom: 10px;
+}
+
+.tier-card p {
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tier-card ul {
+    list-style-type: none;
+    padding: 0;
+    color: #333;
+}
+
+.tier-card ul li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* Tier Background Colors */
+.quartz { background-color: #f1f1f1; }
+.pearl { background-color: #e0f7fa; }
+.topaz { background-color: #ffe0b2; }
+.sapphire { background-color: #c5cae9; }
+.diamond { background-color: #e1bee7; }
+
+.tier-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Investment Breakdown Section */
+#investment-breakdown {
+    text-align: center;
+    padding: 50px;
+    background-color: #343131;
+}
+
+#investment-breakdown h1 {
+    font-size: 32px;
+    color: #FFFBE6;
+}
+
+.breakdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.breakdown-text {
+    max-width: 400px;
+    text-align: left;
+    color: #FFFBE6;
+}
+
+.breakdown-text ul {
     list-style-type: none;
     padding: 0;
 }
 
-/* Banner Section */
-#banner {
-    margin: 0;
-    padding: 0;
+.breakdown-text ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-/* About Sections */
+.breakdown-chart canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact Us Section */
+#contact-sponsors {
+    padding: 40px;
+    background-color: #343131;
+}
+
+.contact-map-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-container {
+    width: 40%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    width: 55%;
+}
+
+.contact-container h1 {
+    color: #d32f2f;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-container p, .contact-container address {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.qr-code img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+/* About Section */
 #about-sections {
+    background-color: #343131;
     padding: 20px;
 }
 
 .about-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about-item {
-    flex: 1;
-    margin: 10px;
-    min-width: 300px;
-}
-
-/* Investment Breakdown Section */
-#investment-breakdown {
+    width: 48%;
+    background-color: #D71313;
     padding: 20px;
-    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.breakdown-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about-item h2 {
+    color: #343131;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.breakdown-text {
-    margin: 10px;
+.about-item p {
+    color: #FFFBE6;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-/* Contact Us and Sponsors Section */
-#contact-sponsors {
-    padding: 20px;
-    background-color: #f8f8f8;
+.about-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-.contact-map-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.about-item ul li {
+    color: #FFFBE6;
+    font-size: 16px;
 }
 
-.contact-container {
-    flex: 1;
-    margin: 10px;
-    min-width: 300px;
-}
-
-.map-container {
-    flex: 1;
-    margin: 10px;
-    min-width: 300px;
-}
-
-/* Media Queries for Responsive Design */
+/* Media Queries for Mobile Mode */
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
     .contact-map-container {
         flex-direction: column;
     }
 
-    .map-container iframe {
+    .contact-container, .map-container {
         width: 100%;
-        height: 250px;
+    }
+
+    /* Adjust the about item width */
+    .about-item {
+        width: 100%; /* Makes it full width on mobile */
+    }
+
+    /* Adjust the main banner */
+    #banner img {
+        width: 100%; /* Ensures image takes full width */
+        height: auto; /* Maintains aspect ratio */
     }
 }
