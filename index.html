@@ -3,68 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Aryans Racing</title>
+    <title>Team Aryans Racing Crowdfunding</title>
+    
     <link rel="stylesheet" href="all.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For investment breakdown chart -->
 </head>
 <body>
-
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="logo">
-                <img src="logo.png" alt="Team Aryans Logo">
+                <img src="logo.png" alt="team aryans racing">
             </div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#crowdfunding-tiers">Tiers</a></li>
-                    <li><a href="#investment-breakdown">Investment</a></li>
-                    <li><a href="#contact-sponsors">Contact</a></li>
-                    <li><a href="#about-sections">About</a></li>
+                    <li><a href="#"><h1>TEAM ARYANS RACING</h1></a></li>
                 </ul>
             </nav>
-            <div class="support-container">
-                <a href="#support" class="support-btn">Click Here to Support Us</a>
-            </div>
+            <a href="https://forms.gle/q3hxPYTXdE9KYMT79" target="_blank" class="support-btn">Click here to<br> Support Us</a>
         </div>
     </header>
+    <br>
 
-    <!-- Main Content Wrapper to ensure proper scrolling -->
-    <main>
-        <!-- Crowdfunding Tiers Section -->
-        <section id="crowdfunding-tiers">
-            <h1>Support Us!</h1>
-            <div class="tiers-container">
-                <!-- Tier Cards -->
-                <div class="tier-card quartz">
-                    <h2>Quartz</h2>
-                    <p>$10</p>
-                    <ul>
-                        <li>Thank you email</li>
-                        <li>Social media shout-out</li>
-                    </ul>
+    <section id="banner">
+        <a href="https://forms.gle/q3hxPYTXdE9KYMT79" target="_blank">
+            <img src="main1.jpg" alt="Team Aryans Racing Banner" style="width: 100%; height: 110%;">
+        </a>
+    </section>
+    <br>
+
+    <section id="about-sections">
+        <div class="about-container">
+            <!-- First Section: About Team Aryans Racing -->
+            <div class="about-item" id="about-team">
+                <h2>About Team Aryans Racing</h2>
+                <p>We are Team Aryans Racing from Government College of Engineering, Chhatrapati Sambhajinagar...</p>
+                <ul>
+                    <li>Overall AIR 4</li>
+                    <!-- Add more items here -->
+                </ul>
+            </div>
+            <!-- Second Section: About E-BAJA and ATVC -->
+            <div class="about-item" id="about-ebaja-atvc">
+                <h2>About E-BAJA</h2>
+                <p>E-BAJA is a national-level off-road vehicle design competition...</p>
+                <h2>About ATVC</h2>
+                <p>ATVC (Aravalli Terrain Vehicle Championship) is a national-level event...</p>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- Tiers Section -->
+    <section id="crowdfunding-tiers">
+        <h1>CROWDFUNDING TIERS</h1>
+        <div class="tiers-container">
+            <div class="tier-card quartz">
+                <h2>BRONZE</h2>
+                <p>< ₹2K</p>
+                <ul>
+                    <li> Certificate of Gratitude</li>
+                </ul>
+            </div>
+            <!-- Add other tiers similarly -->
+        </div>
+    </section>
+
+    <!-- Investment Breakdown Section -->
+    <section id="investment-breakdown">
+        <h1>INVESTMENT BREAKDOWN</h1>
+        <div class="breakdown-container">
+            <div class="breakdown-text">
+                <p><b>THE TOTAL COST OF THE PROJECT IS AROUND 15 LAKHS:<b></p>
+                <ul>
+                    <li><strong>₹8,00,000</strong> covered by the college</li>
+                    <!-- Add more items here -->
+                </ul>
+            </div>
+            <div class="breakdown-chart">
+                <canvas id="investmentChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us and Benefits to Sponsors Section -->
+    <section id="contact-sponsors">
+        <div class="contact-map-container">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <p>Email: <a href="mailto:teamaryans@geca.ac.in">teamaryans@geca.ac.in</a></p>
+                <p>Phone: <a href="tel:+917038039490">7038039490</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/team_aryans_racing" target="_blank">@team_aryans_racing</a></p>
+                <div class="qr-code">
+                    <img src="ig.jpeg" alt="Instagram QR Code">
                 </div>
             </div>
-        </section>
-
-        <!-- Investment Breakdown Section -->
-        <section id="investment-breakdown">
-            <h1>Investment Breakdown</h1>
-            <div class="breakdown-container">
-                <div class="breakdown-text">
-                    <ul>
-                        <li>College Contribution: 53%</li>
-                        <li>Student Contribution: 14%</li>
-                        <li>Audience Contribution: 33%</li>
-                    </ul>
-                </div>
-                <div class="breakdown-chart">
-                    <canvas id="investmentChart"></canvas>
-                </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- Include the JavaScript file -->
-    <script src="script.js"></script>
+    <script src="script1.js"></script> <!-- External JS -->
+    
+    <style>
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .support-btn {
+                margin-top: 15px;
+            }
+            .tiers-container {
+                flex-direction: column;
+            }
+            .tier-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .breakdown-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .breakdown-text {
+                max-width: 100%;
+            }
+            .contact-map-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-container, .map-container {
+                width: 100%;
+            }
+            .about-container {
+                flex-direction: column;
+            }
+            .about-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </body>
 </html>
