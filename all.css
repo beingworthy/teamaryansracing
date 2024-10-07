@@ -1,3 +1,4 @@
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -153,10 +154,8 @@ header {
     border: 0;
 }
 
-/* Media Queries */
-
-/* Mobile Styles (max-width: 768px) */
-@media (max-width: 768px) {
+/* Media Queries for Mobile */
+@media (max-width: 360px) {
     .container {
         flex-direction: column;
         text-align: center;
@@ -221,7 +220,7 @@ header {
     }
 }
 
-/* Desktop Styles (min-width: 769px) */
+/* Media Queries for Desktop */
 @media (min-width: 769px) {
     .container {
         display: flex;
