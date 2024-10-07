@@ -186,50 +186,33 @@ header {
 #contact-sponsors {
     background-color: #f0f0f0;
     padding: 20px;
-    text-align: center;
 }
 
-.contact-tiers-container {
+.contact-map-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
 }
 
-.contact-card {
+.contact-container {
     flex: 1;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
+    min-width: 300px;
+    padding: 10px;
 }
 
-.contact-card:hover {
-    background-color: #e0e0e0;
-}
-
-.contact-card h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.contact-card p {
-    font-size: 16px;
+.contact-container a {
     color: #333;
+    text-decoration: none;
 }
 
-.qr-code {
-    margin-top: 10px;
+.contact-container a:hover {
+    text-decoration: underline;
 }
 
-.qr-code img {
-    width: 150px; /* Adjust the size of the QR code */
-    height: auto;
+.map-container {
+    flex: 1;
+    min-width: 300px;
 }
-
 
 /* Mobile Mode Styles */
 @media screen and (max-width: 768px) {
@@ -292,15 +275,5 @@ header {
     .map-container {
         width: 100%;
         margin: 10px 0;
-    }
-
-     .contact-tiers-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-card {
-        width: 100%;
-        margin-bottom: 20px;
     }
 }
