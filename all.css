@@ -143,121 +143,17 @@ header {
 /* Tier Background Colors */
 .quartz { background-color: #f1f1f1; }
 .pearl { background-color: #e0f7fa; }
-.topaz { background-color: #ffe0b2; }
-.sapphire { background-color: #c5cae9; }
-.diamond { background-color: #e1bee7; }
-
-.tier-card:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-}
-
-/* Investment Breakdown Section */
-#investment-breakdown {
-    text-align: center;
-    padding: 50px;
-    background-color: #343131;
-}
-
-#investment-breakdown h1 {
-    font-size: 32px;
-    color: #FFFBE6;
-}
-
-.breakdown-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.breakdown-text {
-    max-width: 400px;
-    text-align: left;
-    color: #FFFBE6;
-}
-
-.breakdown-text ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.breakdown-text ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.breakdown-chart canvas {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Contact Us Section */
-#contact-sponsors {
-    padding: 40px;
-    background-color: #343131;
-}
-
-.contact-map-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.contact-container {
-    width: 40%;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.map-container {
-    width: 55%;
-}
-
-.contact-container h1 {
-    color: #d32f2f;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-container p, .contact-container address {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.qr-code img {
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
-}
-
-/* Desktop Styles */
-#desktop-mode {
-    /* Include your existing desktop styles here */
-}
-
-/* Mobile Styles */
-#mobile-mode {
-    padding: 20px; /* Adjust as needed */
-}
-
-#mobile-mode .about-container {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-}
-
-#mobile-mode .about-item {
-    width: 100%; /* Make full width on mobile */
-}
 
 /* Media Queries for Mobile Adjustments */
 @media (max-width: 768px) {
+    #desktop-mode {
+        display: none; /* Hide desktop mode on mobile */
+    }
+
+    #mobile-mode {
+        display: block; /* Show mobile mode on mobile */
+    }
+
     .support-container {
         text-align: center;
         margin-top: 20px; /* Adjust spacing for mobile */
@@ -274,4 +170,18 @@ header {
     .tier-card {
         width: 90%; /* Adjust width of tier cards */
     }
+}
+
+/* Default styles for mobile mode */
+#mobile-mode {
+    padding: 20px; /* Adjust as needed */
+}
+
+#mobile-mode .about-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+#mobile-mode .about-item {
+    width: 100%; /* Make full width on mobile */
 }
