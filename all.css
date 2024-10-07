@@ -234,4 +234,27 @@ header {
         width: 100%;
         height: auto;
     }
+
+    /* About Section */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Crowdfunding Tiers */
+    .tiers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Investment Breakdown */
+    .breakdown-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Contact and Map Section */
+    .contact-map-container {
+        flex-direction: column;
+    }
 }
