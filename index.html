@@ -3,93 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crowdfunding</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-</head>
-<body>
+    <title>Team Aryans Racing Crowdfunding</title>
+    
+    <link rel="stylesheet" href="all.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For investment breakdown chart -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Desktop Section -->
-    <section id="desktop-mode">
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <img src="logo.png" alt="Logo">
-                </div>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="#crowdfunding-tiers">Tiers</a></li>
-                        <li><a href="#investment-breakdown">Investment</a></li>
-                        <li><a href="#contact-sponsors">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="cta">
-                    <button>Join Us</button>
-                </div>
-            </div>
-        </header>
+        header {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+        }
 
-        <div class="support-container">
-            <a href="#" class="support-btn">Support Us</a>
-        </div>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
 
-        <section id="crowdfunding-tiers">
-            <h1>Crowdfunding Tiers</h1>
-            <div class="tiers-container">
-                <div class="tier-card quartz">
-                    <h2>Quartz Tier</h2>
-                    <p>$10</p>
-                    <ul>
-                        <li>Thank you email</li>
-                    </ul>
-                </div>
-                <div class="tier-card pearl">
-                    <h2>Pearl Tier</h2>
-                    <p>$25</p>
-                    <ul>
-                        <li>All Quartz benefits</li>
-                        <li>Exclusive updates</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </section>
+        .logo img {
+            width: 150px;
+        }
 
-    <!-- Mobile Section -->
-    <section id="mobile-mode">
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <img src="logo.png" alt="Logo">
-                </div>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="#crowdfunding-tiers">Tiers</a></li>
-                        <li><a href="#investment-breakdown">Investment</a></li>
-                        <li><a href="#contact-sponsors">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="cta">
-                    <button>Join Us</button>
-                </div>
-            </div>
-        </header>
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-        <div class="support-container">
-            <a href="#" class="support-btn">Support Us</a>
-        </div>
+        .navbar ul li {
+            margin-left: 20px;
+        }
 
-        <div class="about-container">
-            <div class="about-item">
-                <h2>About Us</h2>
-                <p>Your about text here.</p>
-            </div>
-            <div class="about-item">
-                <h2>Our Mission</h2>
-                <p>Your mission text here.</p>
-            </div>
-        </div>
-    </section>
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
 
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
-</body>
-</html>
+        .support-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .support-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Banner Section */
+        #banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* About Section */
+        #about-sections {
+            padding: 20px;
+ 
