@@ -5,71 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Aryans Racing Crowdfunding</title>
     
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For investment breakdown chart -->
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="team aryans racing">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#"><h1>TEAM ARYANS RACING</h1></a></li>
+                </ul>
+            </nav>
+            <a href="https://forms.gle/q3hxPYTXdE9KYMT79" target="_blank" class="support-btn">Click here to<br> Support Us</a>
+        </div>
+    </header>
+    <br>
 
-        header {
-            width: 100%;
-            background-color: #333;
-            padding: 10px 0;
-        }
+    <!-- Banner Section -->
+    <section id="banner">
+        <a href="https://forms.gle/q3hxPYTXdE9KYMT79" target="_blank">
+            <img src="main1.jpg" alt="Team Aryans Racing Banner">
+        </a>
+    </section>
+    <br>
 
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
+    <section id="about-sections">
+        <div class="about-container">
+            <!-- First Section: About Team Aryans Racing -->
+            <div class="about-item" id="about-team">
+                <h2>About Team Aryans Racing</h2>
+                <p>We are Team Aryans Racing from Government College of Engineering, Chhatrapati Sambhajinagar...</p>
+                <ul>
+                    <li>Overall AIR 4</li>
+                    <!-- Add more items here -->
+                </ul>
+            </div>
+            <!-- Second Section: About E-BAJA and ATVC -->
+            <div class="about-item" id="about-ebaja-atvc">
+                <h2>About E-BAJA</h2>
+                <p>E-BAJA is a national-level off-road vehicle design competition...</p>
+                <h2>About ATVC</h2>
+                <p>ATVC (Aravalli Terrain Vehicle Championship) is a national-level event...</p>
+            </div>
+        </div>
+    </section>
+    <br>
 
-        .logo img {
-            width: 150px;
-        }
+    <!-- Tiers Section -->
+    <section id="crowdfunding-tiers">
+        <h1>CROWDFUNDING TIERS</h1>
+        <div class="tiers-container">
+            <div class="tier-card quartz">
+                <h2>BRONZE</h2>
+                <p>< ₹2K</p>
+                <ul>
+                    <li> Certificate of Gratitude</li>
+                </ul>
+            </div>
+            <!-- Add other tiers similarly -->
+        </div>
+    </section>
 
-        .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+    <!-- Investment Breakdown Section -->
+    <section id="investment-breakdown">
+        <h1>INVESTMENT BREAKDOWN</h1>
+        <div class="breakdown-container">
+            <div class="breakdown-text">
+                <p><b>THE TOTAL COST OF THE PROJECT IS AROUND 15 LAKHS:</b></p>
+                <ul>
+                    <li><strong>₹8,00,000</strong> covered by the college</li>
+                    <!-- Add more items here -->
+                </ul>
+            </div>
+            <div class="breakdown-chart">
+                <canvas id="investmentChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </section>
 
-        .navbar ul li {
-            margin-left: 20px;
-        }
+    <!-- Contact Us and Benefits to Sponsors Section -->
+    <section id="contact-sponsors">
+        <div class="contact-map-container">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <p>Email: <a href="mailto:teamaryans@geca.ac.in">teamaryans@geca.ac.in</a></p>
+                <p>Phone: <a href="tel:+917038039490">7038039490</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/team_aryans_racing" target="_blank">@team_aryans_racing</a></p>
+                <div class="qr-code">
+                    <img src="ig.jpeg" alt="Instagram QR Code">
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
 
-        .navbar ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-        }
-
-        .support-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .support-btn:hover {
-            background-color: #45a049;
-        }
-
-        /* Banner Section */
-        #banner img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* About Section */
-        #about-sections {
-            padding: 20px;
- 
+    <script src="script1.js"></script> <!-- External JS -->
+</body>
+</html>
