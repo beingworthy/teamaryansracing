@@ -190,7 +190,6 @@ header {
 
 /* Mobile Mode Styles */
 @media screen and (max-width: 768px) {
-    /* Mobile-specific styles */
     header {
         display: block;
         text-align: center;
@@ -231,3 +230,9 @@ header {
     }
 
     /* Investment Breakdown */
+    .breakdown-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .break
