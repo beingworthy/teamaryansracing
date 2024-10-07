@@ -57,11 +57,13 @@ header {
 #banner {
     width: 100%;
     overflow: hidden;
+    display: flex; /* Ensure it's a flex container */
+    justify-content: center; /* Center the content */
 }
 
 .banner-image {
     width: 100%;
-    height: auto;
+    height: auto; /* Keep the aspect ratio */
 }
 
 /* About Section */
@@ -178,7 +180,6 @@ header {
 .breakdown-chart {
     flex: 1;
     min-width: 300px;
-    margin: 10px;
 }
 
 /* Contact and Sponsors Section */
@@ -237,9 +238,8 @@ header {
     }
 
     /* Adjusting the banner section for mobile */
-    .banner-image {
-        width: 100%;
-        height: auto;
+    #banner {
+        display: block; /* Stack the banner */
     }
 
     /* About Section */
