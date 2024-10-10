@@ -312,6 +312,9 @@ header {
          justify-content: flex-start;
         
     }
+    .container-item h1 {
+    text-align: left;
+}
 
     .navbar ul {
         flex-direction: row;
