@@ -380,7 +380,7 @@ header {
 
   
     .map-container iframe {
-    width: 50%; /* Makes the map take 100% of the container’s width */
+    width: 75%; /* Makes the map take 100% of the container’s width */
     height: 450px; /* Adjust the height as needed */
     border: 0; /* Removes the border around the iframe */
 }
