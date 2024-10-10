@@ -299,41 +299,28 @@ header {
 @media (max-width: 576px) {
     /* Adjust header container for small screens */
     .container {
-        flex-direction: row;
-        align-items: mid;
-        width: 10px;
-        justify-content: space-between; /* Align items on opposite sides */
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
+        width: 120px;
     }
-.header{
-    align-items: left;
-}
+
     .logo img {
-        width: 80px;
-        height: 80px;
+        width: 120px;
         text-align: left;
-        margin-right: 50px;
-         justify-content: flex-start;
-        justify-content: space-between; /* Align items on opposite sides */
-    align-items: center;
     }
-    .container-item h1 {
-    text-align: left;
+    .navbar-container h1 {
+     text-align: left;
 }
 
     .navbar ul {
-        flex-direction: row;
-        align-items: right;
+        flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
 
     .cta button {
         width: 100%;
         margin-top: 15px;
-         text-align: right;
-        float: right;
-         margin-right: 300px;
-         justify-content: flex-start;
     }
 
     /* Adjust tier cards for small screens */
@@ -367,17 +354,9 @@ header {
     .contact-container {
         width: 100%;
     }
-   
-    .qr-code img {
-    width: 10px;
-    height: 10px;
-    margin-top: 8px;
-}
-
 
     .map-container {
         width: 100%;
-        max-width: 150px;
     }
 
     /* About Section for mobile */
