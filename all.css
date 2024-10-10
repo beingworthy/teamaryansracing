@@ -378,9 +378,12 @@ header {
         width: 100%;
     }
 
-    .map-container {
-        width: 100%;
-    }
+  
+    .map-container iframe {
+    width: 50%; /* Makes the map take 100% of the container’s width */
+    height: 450px; /* Adjust the height as needed */
+    border: 0; /* Removes the border around the iframe */
+}
 
     /* About Section for mobile */
     .about-container {
