@@ -302,6 +302,9 @@ header {
         flex-direction: row;
         align-items: left;
         width: 55px;
+        margin-top: 15px;
+        display: flex;
+    justify-content: flex-start;
     }
 
     .logo img {
@@ -356,9 +359,9 @@ header {
     }
    
     .qr-code img {
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
+    width: 10px;
+    height: 10px;
+    margin-top: 8px;
 }
 
 
