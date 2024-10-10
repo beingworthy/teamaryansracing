@@ -316,10 +316,12 @@ header {
         width: 120px;
         text-align: left;
     }
-    .navbar h1 {
+    header{ 
+        .navbar h1 {
         font-size: 20px; /* Adjust font size for smaller screens */
         text-align: left; /* Center align text */
         margin: 0; /* Remove any default margin */
+    }
     }
 
     .navbar ul {
