@@ -324,8 +324,8 @@ header {
         margin-top: 15px;
          text-align: right;
         float: right;
-         margin-right: 200px;
-         justify-content: flex-end;
+         margin-right: 300px;
+         justify-content: flex-start;
     }
 
     /* Adjust tier cards for small screens */
