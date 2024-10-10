@@ -319,6 +319,8 @@ header {
     .cta button {
         width: 100%;
         margin-top: 15px;
+         text-align: right;
+        float: right;
     }
 
     /* Adjust tier cards for small screens */
@@ -352,10 +354,17 @@ header {
     .contact-container {
         width: 100%;
     }
+   
+    .qr-code img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
 
     .map-container {
         width: 100%;
-        max-width: 300px;
+        max-width: 150px;
     }
 
     /* About Section for mobile */
