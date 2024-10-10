@@ -317,7 +317,7 @@ header {
         text-align: left;
        ;
          position: relative; /* Position the element relative to its normal position */
-    right: 225px;
+    right: 125px;
     }
     header{ 
         .navbar h1 {
@@ -325,7 +325,7 @@ header {
         text-align: left; /* Center align text */
         margin: 0; /* Remove any default margin */
             position: relative; /* Position the element relative to its normal position */
-    right: 175px;
+    right: 75px;
     }
     }
 
@@ -337,7 +337,7 @@ header {
     }
     .support-btn {
          position: relative;
-        right: 125px;
+        right: 25px;
     }
 
     .cta button {
@@ -380,7 +380,7 @@ header {
 
   
     .map-container iframe {
-    width: 75%; /* Makes the map take 100% of the container’s width */
+    width: 100%; /* Makes the map take 100% of the container’s width */
     height: 450px; /* Adjust the height as needed */
     border: 0; /* Removes the border around the iframe */
 }
