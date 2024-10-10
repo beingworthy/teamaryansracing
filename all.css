@@ -335,6 +335,9 @@ header {
         gap: 10px;
        
     }
+    .support-btn {
+         right: 200px;
+    }
 
     .cta button {
         width: 100%;
