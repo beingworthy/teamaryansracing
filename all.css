@@ -317,7 +317,7 @@ header {
         text-align: left;
        ;
          position: relative; /* Position the element relative to its normal position */
-    left: 200px;
+    right: 200px;
     }
     header{ 
         .navbar h1 {
