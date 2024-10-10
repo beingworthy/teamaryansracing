@@ -307,6 +307,7 @@ header {
     .logo img {
         width: 120px;
         text-align: left;
+        float: left;
     }
 
     .navbar ul {
@@ -353,7 +354,7 @@ header {
     }
 
     .map-container {
-        width: 100%;
+        width: 80%;
     }
 
     /* About Section for mobile */
