@@ -299,7 +299,7 @@ header {
 @media (max-width: 576px) {
     /* Adjust header container for small screens */
     .container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: left;
         width: 120px;
     }
