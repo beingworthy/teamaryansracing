@@ -301,7 +301,7 @@ header {
     .container {
         flex-direction: row;
         align-items: left;
-        width: 55px;
+        width: 10px;
         margin-top: 15px;
         display: flex;
     justify-content: flex-end;
