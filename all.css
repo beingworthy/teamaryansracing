@@ -338,6 +338,8 @@ header {
     .cta button {
         width: 100%;
         margin-top: 15px;
+        position: relative; /* Position the element relative to its normal position */
+    right: 100px;
     }
 
     /* Adjust tier cards for small screens */
