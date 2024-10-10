@@ -306,6 +306,7 @@ header {
 
     .logo img {
         width: 120px;
+        align-items: left;
     }
 
     .navbar ul {
