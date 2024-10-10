@@ -334,7 +334,7 @@ header {
         align-items: center;
         gap: 10px;
         position: relative; /* Position the element relative to its normal position */
-    right: 50px;
+    left: 50px;
     }
 
     .cta button {
