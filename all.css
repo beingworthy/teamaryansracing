@@ -329,6 +329,7 @@ header {
          text-align: left;
         float: right;
          margin-left: 20px;
+         justify-content: flex-end;
     }
 
     /* Adjust tier cards for small screens */
