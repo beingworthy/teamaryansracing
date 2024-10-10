@@ -302,15 +302,20 @@ header {
         flex-direction: row;
         align-items: center;
         width: 120px;
+         display: flex;
+    justify-content: space-between; /* Align items on opposite sides */
+
     }
 
     .logo img {
         width: 120px;
         text-align: left;
     }
-    .navbar-container h1 {
-     text-align: left;
-}
+    .navbar h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        text-align: left; /* Center align text */
+        margin: 0; /* Remove any default margin */
+    }
 
     .navbar ul {
         flex-direction: column;
