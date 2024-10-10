@@ -313,8 +313,11 @@ header {
     }
 
     .logo img {
-        width: 120px;
+        width: 80px;
         text-align: left;
+       ;
+         position: relative; /* Position the element relative to its normal position */
+    left: 200px;
     }
     header{ 
         .navbar h1 {
