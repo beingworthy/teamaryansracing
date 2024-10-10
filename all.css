@@ -295,3 +295,73 @@ header {
         width: 100%;
     }
 }
+/* Mobile Media Queries */
+@media (max-width: 576px) {
+    /* Adjust header container for small screens */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cta button {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    /* Adjust tier cards for small screens */
+    .tiers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tier-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Investment breakdown adjustments */
+    .breakdown-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .breakdown-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Contact Us Section for mobile */
+    .contact-map-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .map-container {
+        width: 100%;
+    }
+
+    /* About Section for mobile */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}
