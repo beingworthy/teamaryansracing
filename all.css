@@ -305,7 +305,9 @@ header {
         justify-content: space-between; /* Align items on opposite sides */
     align-items: center;
     }
-
+.header{
+    align-items: left;
+}
     .logo img {
         width: 80px;
         height: 80px;
